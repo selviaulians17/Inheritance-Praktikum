@@ -1,19 +1,20 @@
-﻿class Program
+class Program
 {
     static void Main(string[] args)
     {
         Nvidia nvidia = new Nvidia();
         Corei5 corei5 = new Corei5();   
         Laptop laptop1 = new Vivobook(nvidia, corei5);
+        //laptop1.ngoding();
         Amd amd = new Amd();
         Ryzen ryzen = new Ryzen();
         Corei7 corei7 = new Corei7();
         Laptop laptop2 = new IdeaPad(amd, ryzen);
         Predator predator = new Predator(amd, corei7);
         predator.BermainGame();
-        laptop2.LaptopDinyalakan();
-        laptop2.LaptopDimatikan();
-        Console.WriteLine($"{laptop1.vga}, {laptop1.processor.Merk}, {laptop1.processor}");
+        //laptop2.LaptopDinyalakan();
+        //laptop2.LaptopDimatikan();
+        //Console.WriteLine($"{laptop1.vga}, {laptop1.processor.Merk}, {laptop1.processor}");
 
     }
 }
